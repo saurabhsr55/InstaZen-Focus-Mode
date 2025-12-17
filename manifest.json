@@ -1,0 +1,14 @@
+
+{
+  "manifest_version": 3,
+  "name": "InstaZen - No Reels or Explore",
+  "version": "2.0",
+  "description": "Hides Reels AND Explore tabs on Instagram Web for maximum focus.",
+  "content_scripts": [
+    {
+      "matches": ["*://www.instagram.com/*"],
+      "css": ["styles.css"],
+      "run_at": "document_start"
+    }
+  ]
+}

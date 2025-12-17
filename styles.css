@@ -1,0 +1,25 @@
+
+/* --- SIDEBAR HIDDEN ITEMS --- */
+
+/* Hide the Reels button in the left sidebar */
+a[href="/reels/"] {
+    display: none !important;
+}
+
+/* Hide the Explore (Compass) button in the left sidebar */
+a[href="/explore/"] {
+    display: none !important;
+}
+
+/* --- PROFILE HIDDEN ITEMS --- */
+
+/* Hide the Reels tab on user profiles */
+a[href$="/reels/"] {
+    display: none !important;
+}
+
+/* --- OPTIONAL: MOBILE VIEW ON DESKTOP --- */
+/* Some smaller screens show a bottom bar. This hides the explore/reels icons there too. */
+a[href="/explore/"] svg, a[href="/reels/"] svg {
+    display: none !important;
+}
